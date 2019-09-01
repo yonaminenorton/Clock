@@ -3,3 +3,12 @@
 *.dll
 *.log
 *.pdb
+*.suo
+XamarinForms/XamarinForms/obj/
+XamarinForms/XamarinForms/bin/
+XamarinForms/XamarinForms.Android/obj/
+XamarinForms/XamarinForms.iOS/obj/
+XamarinForms/XamarinForms.iOS/bin/
+WindowsForms/bin/
+WindowsForms/obj/
+
