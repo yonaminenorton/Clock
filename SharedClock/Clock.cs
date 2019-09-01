@@ -10,7 +10,7 @@ namespace SharedClock
 
         private CancellationTokenSource _tokenSource;
 
-        public void Start(Action<string> actShowTime)
+        public void PowerOn(Action<string> DisplayTime)
         {
             _tokenSource = new CancellationTokenSource();
 
@@ -31,12 +31,12 @@ namespace SharedClock
 
                     prev = now;
 
-                    actShowTime(now);
+                    DisplayTime(now);
                 }
             });
         }
 
-        public void Stop()
+        public void PowerOff()
         {
             _tokenSource.Cancel();
         }

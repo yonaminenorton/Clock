@@ -20,7 +20,7 @@ namespace XamarinForms
             base.OnStart();
 
             _clock = new Clock();
-            StartClock();
+            PowerOnClock();
 
         }
 
@@ -28,7 +28,7 @@ namespace XamarinForms
         {
             base.OnSleep();
 
-            _clock.Stop();
+            _clock.PowerOff();
 
         }
 
@@ -36,17 +36,17 @@ namespace XamarinForms
         {
             base.OnResume();
 
-            StartClock();
+            PowerOnClock();
         }
 
-        private void StartClock()
+        private void PowerOnClock()
         {
             if (_clock.IsRunning())
             {
                 return;
             }
 
-            _clock.Start((string txt) => {
+            _clock.PowerOn((string txt) => {
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     var page = (MainPage)MainPage;

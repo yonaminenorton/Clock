@@ -13,20 +13,20 @@ namespace WindowsForms
             InitializeComponent();
 
             _clock = new Clock();
-            StartClock();
+            PowerOnClock();
 
         }
 
-        private void StartClock()
+        private void PowerOnClock()
         {
             if (_clock.IsRunning())
             {
                 return;
             }
 
-            _clock.Start((string txt) => {
+            _clock.PowerOn((string txt) => {
                 Action act = () => TimeLabel.Text = txt;
-                this.Invoke(act);
+                Invoke(act);
 
             });
         }
