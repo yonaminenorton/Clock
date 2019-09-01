@@ -7,8 +7,7 @@
              x:Class="XamarinForms.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label x:Name="TimeLabel" Text="" 
+        <Label x:Name="TimeLabel" Text="" FontSize="Large"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
     </StackLayout>
