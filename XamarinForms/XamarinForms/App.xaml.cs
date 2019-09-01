@@ -48,6 +48,7 @@ namespace XamarinForms
             }
 
             _clock.PowerOn((string txt) => {
+                //UIスレッドでコントロールを操作させる
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     var page = (MainPage)MainPage;

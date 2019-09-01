@@ -25,6 +25,7 @@ namespace WindowsForms
             }
 
             _clock.PowerOn((string txt) => {
+                //UIスレッドでコントロールを操作させる
                 Action act = () => TimeLabel.Text = txt;
                 Invoke(act);
 

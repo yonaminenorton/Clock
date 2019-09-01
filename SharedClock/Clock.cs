@@ -6,7 +6,7 @@ namespace SharedClock
 {
     /// <summary>
     /// 時計クラス
-    /// ・現在の日時を表示する
+    /// ・現在日時を表示する
     /// </summary>
     public class Clock
     {
