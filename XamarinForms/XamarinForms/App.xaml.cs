@@ -28,6 +28,7 @@ namespace XamarinForms
         {
             base.OnSleep();
 
+            //アプリがバックグラウンドのときは時計を終了
             _clock.PowerOff();
 
         }
