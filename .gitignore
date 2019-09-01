@@ -4,9 +4,11 @@
 *.log
 *.pdb
 *.suo
+*.user
 XamarinForms/XamarinForms/obj/
 XamarinForms/XamarinForms/bin/
 XamarinForms/XamarinForms.Android/obj/
+XamarinForms/XamarinForms.Android/bin/
 XamarinForms/XamarinForms.iOS/obj/
 XamarinForms/XamarinForms.iOS/bin/
 WindowsForms/bin/
